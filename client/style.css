@@ -30,7 +30,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -50,7 +50,7 @@ body {
 }
 
 .ai {
-  background: #40414F;
+  background: #40414f;
 }
 
 .chat {
@@ -69,7 +69,7 @@ body {
   height: 36px;
   border-radius: 5px;
 
-  background: #5436DA;
+  background: #5436da;
 
   display: flex;
   justify-content: center;
@@ -90,12 +90,23 @@ body {
   flex: 1;
 
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 18px;
 
   max-width: 100%;
   overflow-x: scroll;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.botMessage{
+  flex: 1;
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 100%;
+  white-space: pre-wrap;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -110,7 +121,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  background: #40414f;
 
   display: flex;
   flex-direction: row;
@@ -128,6 +139,10 @@ textarea {
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+[placeholder] {
+  color: #fff;
 }
 
 button {
